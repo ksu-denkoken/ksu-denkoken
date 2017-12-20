@@ -32,6 +32,8 @@ a:active {
 }
 img {
   background-color: white;
+  width: 400px;
+  heigth: auto;
 }
 figure > a{
   border-bottom: none;
@@ -72,7 +74,6 @@ header {
 .title {
     display: flex;
     max-width: 900px;
-    min-width: 600px;
     margin: 0 auto;
 }
 .menu-button {
@@ -121,7 +122,7 @@ header {
   margin: 0 auto;
   background-color: #003300;
 }
-
+/*max-510px*/
 .HolyGrail-main {
   margin: 0 10px;
 }
@@ -170,12 +171,16 @@ footer {
     font-size: 1.5rem;
     display: inline-block;
   }
+  img{
+    width: 300px;
+    height: auto;
+  }
 }
   @media (max-width: 750px) {
     .HolyGrail-ads,h1 {
       display: none;
     }
-    .HolyGrail,.HolyGrail-body,.HolyGrail-main{
+    .HolyGrail,.HolyGrail-body,.HolyGrail-main,.Holygrail-content{
       width: 100%;
     }
   }
