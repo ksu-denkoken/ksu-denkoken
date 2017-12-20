@@ -171,14 +171,11 @@ footer {
     display: inline-block;
   }
 }
-  @media (max-width: 700px) {
-    .HolyGrail-ads {
+  @media (max-width: 750px) {
+    .HolyGrail-ads,h1 {
       display: none;
     }
-  }
-  @media (max-width: 600px){
-    h1 {
-      display: none;
+    .HolyGrail,.HolyGrail-body,.HolyGrail-main{
+      width: 100%;
     }
   }
-}
