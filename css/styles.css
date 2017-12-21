@@ -87,6 +87,9 @@ header {
     border-radius: 5px;
     opacity: 0.9;
     border-bottom: solid 3px #b3b3b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menu-button:active {
   border: none;
@@ -154,6 +157,9 @@ footer {
   padding: 10px;
   cursor: pointer;
 }
+.twcolor {
+  color: #00aced ;
+}
 .page-top-button:active{
   background-color: #C0C0C0;
 }
@@ -180,7 +186,18 @@ footer {
     .HolyGrail-ads,h1 {
       display: none;
     }
+    h2 {
+      font-size: 2rem;
+    }
     .HolyGrail,.HolyGrail-body,.HolyGrail-main,.Holygrail-content{
       width: 100%;
+    }
+    img {
+      width: 250px;
+      height: auto;
+    }
+    .page-top-button {
+      width: 30px;
+      height: 30px;
     }
   }

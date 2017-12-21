@@ -20,7 +20,7 @@ $(() =>{
 //menu-barを消す処理
 $(() => {
   const $mbutton = $('.menu-button');
-  const $mbar    = $('.menu-bar');
+  const $ads    = $('.HolyGrail-ads');
   var windowWidth =$(window).width();
   var state = 0;
 
@@ -28,10 +28,10 @@ $(() => {
     state = 1 - state;
     if(state == 1){
       $mbutton.css({'background-color':'#C0C0C0','border':'none'});
-        $mbar.fadeIn();
+        $ads.fadeIn();
     }else{
       $mbutton.css({'background-color':'','border':''});
-      $mbar.fadeOut();
+      $ads.fadeOut();
     }
   });
 });
