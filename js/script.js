@@ -21,6 +21,7 @@ $(() =>{
 $(() => {
   const $mbutton = $('.menu-button');
   const $ads    = $('.HolyGrail-ads');
+  const $main =$('.HolyGrail-main');
   var windowWidth =$(window).width();
   var state = 0;
 
@@ -28,10 +29,12 @@ $(() => {
     state = 1 - state;
     if(state == 1){
       $mbutton.css({'background-color':'#C0C0C0','border':'none'});
-        $ads.fadeIn();
+      $main.fadeOut(500);
+      $ads.delay(500).fadeIn();
     }else{
       $mbutton.css({'background-color':'','border':''});
-      $ads.fadeOut();
+      $ads.fadeOut(500);
+      $main.delay(500).fadeIn();
     }
   });
 });

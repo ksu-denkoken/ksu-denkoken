@@ -79,6 +79,7 @@ header {
 .menu-button {
     margin-top: auto;
     margin-left: auto;
+    margin-right: 10px;
     margin-bottom: 10px;
     background-color: #FFFFFF;
     height: 50px;
@@ -102,8 +103,9 @@ header {
   flex-direction: row;
 }
 .top,.about,.content,.qanda,.version{
-  width: 180px;
+  width: 20%;
   padding: 10px 0;
+  box-sizing:border-box;
   border: 1px solid #000000;
   background-color: #228B22;
   text-align: center;
@@ -139,7 +141,7 @@ header {
 footer {
   border-top: 1px groove #000000;
   text-align: right;
-  text-size: 0.5rem;
+  font-size: 1rem;
   padding-right: 5rem;
   background-color: #006600;
 }
@@ -164,6 +166,12 @@ footer {
   background-color: #C0C0C0;
 }
 
+@media (min-width: 750px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   .menu-bar {
     font-size:0;
@@ -172,8 +180,7 @@ footer {
     display: block;
   }
   .top,.about,.content,.qanda,.version{
-    //margin: 0;
-    width: 120px;
+    margin: 0;
     font-size: 1.5rem;
     display: inline-block;
   }
@@ -182,9 +189,15 @@ footer {
     height: auto;
   }
 }
+
   @media (max-width: 750px) {
     .HolyGrail-ads,h1 {
       display: none;
+      margin-left: inherit;
+      min-width: 150px;
+      max-width: inherit;
+      height: 100%;
+      margin: 0 auto;
     }
     h2 {
       font-size: 2rem;
@@ -192,12 +205,25 @@ footer {
     .HolyGrail,.HolyGrail-body,.HolyGrail-main,.Holygrail-content{
       width: 100%;
     }
+    .top,.about,.content,.qanda,.version {
+      width: 20%;
+      font-size: 0.8rem;
+    }
     img {
       width: 250px;
       height: auto;
     }
+    .menu-button {
+      margin-top: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
     .page-top-button {
       width: 30px;
       height: 30px;
+    }
+    footer {
+      font-size: 0.5rem;
+      padding-right: 4rem;
     }
   }
