@@ -1,124 +1,18 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/favicon-16x16.png">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <link rel="stylesheet" href="dist/photoswipe.css">
-    <link rel="stylesheet" href="dist/default-skin/default-skin.css">
-    <script type="text/javascript" src="dist/photoswipe.min.js"></script>
-    <script type="text/javascript" src="dist/photoswipe-ui-default.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Slabo+13px|Ubuntu" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>about</title>
-  </head>
-  <body class="HolyGrail">
-    <header>
-      <div class="image-filter">
-        <div class="title">
-          <div>
-            <h1>DENKOKEN</h1>
-            <p>九州産業大学電気工学研究部</p>
-          </div>
-          <div class="menu-button">
-            <i class="fa fa-twitter fa-2x fa-fw twcolor" aria-hidden="true"></i>
-          </div>
-        </div>
-        <div class="menu-bar">
-          <a class="about" href="#">ABOUT</a>
-          <a class="blog" href="blog.html">BLOG</a>
-          <a class="qanda" href="qanda.html">Q & A</a>
-          <a class="etc" href="etc.html">ETC</a>
-        </div>
-      </div>
-    </header>
-    <div class="HolyGrail-body">
-      <div class="HolyGrail-content">
-        <main class="HolyGrail-main">
-          <h2>About</h2>
-          <div class="text">
-            <p>九州産業大学電気工学研究部は電気工作やプログラミングを行う部活動です。<br>
-              <br>
-              場所:学友会棟-3階東側<br>
-              <br>
-              活動日時:火曜　木曜　18:00~9:00<br>
-              <br>
-              男子部員:20人<br>
-              女子部員:3人
-            </p>
-          </div>
-          <div class="my-gallery">
-            <figure>
-              <a href="images/job_handa_duke.png" data-size="700x790">
-                <img src="images/job_handa_duke.png" alt="blackhat"/>
-              </a>
-              <figcaption>電気工作の様子</figcaption>
-            </figure>
-          </div>
-        </main>
-        <aside class="HolyGrail-ads">
-          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%40ksu_denkouken" data-widget-id="933582382732517377">@ksu_denkoukenに関するツイート</a>
-          <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-          </script>
-        </aside>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <title>九州産業大学電気工学研究部</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/canvas.css">
+</head>
+<body>
+  <canvas id="matrix">このブラウザはcanvasが有効でありません。</canvas>
+  <script src="js/canvas.js"></script>
+  <section id="body" class="link">
+    <div class="main-title">
+      <a href="about.html"><h1>九州産業大学電気工研究部</h1></a>
     </div>
-    <footer>
-      <p>© 2017 Kyanou inc.</p>
-      <!--copyrightを書いて見たかっただけだから、部員で後継者が現れたら、
-      自分の後に年号と名前追記して改変して構わんよ-->
-    </footer>
-    <img href="#" class="page-top-button" src="images/ArrowUp.png">
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-	  <!-- Background of PhotoSwipe.It's a separate element as animating opacity is faster than rgba(). -->
-	   <div class="pswp__bg"></div>
-     <!-- Slides wrapper with overflow:hidden. -->
-	   <div class="pswp__scroll-wrap">
-      <!-- Container that holds slides.
-			PhotoSwipe keeps only 3 of them in the DOM to save memory.
-			Don't modify these 3 pswp__item elements, data is added later on. -->
-		  <div class="pswp__container">
-			     <div class="pswp__item"></div>
-			     <div class="pswp__item"></div>
-			     <div class="pswp__item"></div>
-		  </div>
-		  <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-		  <div class="pswp__ui pswp__ui--hidden">
-        <div class="pswp__top-bar">
-<!--  Controls are self-explanatory. Order can be changed. -->
-          <div class="pswp__counter"></div>
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-          <button class="pswp__button pswp__button--share" title="Share"></button>
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-<!-- element will get class pswp__preloader-active when preloader is running -->
-				  <div class="pswp__preloader">
-					  <div class="pswp__preloader__icn">
-					    <div class="pswp__preloader__cut">
-						    <div class="pswp__preloader__donut"></div>
-					    </div>
-					  </div>
-				  </div>
-			  </div>
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-				  <div class="pswp__share-tooltip"></div>
-			  </div>
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-			  </button>
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-			  </button>
-        <div class="pswp__caption">
-			    <div class="pswp__caption__center"></div>
-			  </div>
-		  </div>
-	  </div>
-   </div>
-  </body>
-</html>
+  </section>
+</body>

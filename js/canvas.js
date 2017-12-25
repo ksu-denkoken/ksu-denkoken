@@ -1,3 +1,10 @@
+$(() => {
+     $(".link").click(() => {
+         window.location.href = "about.html";
+         return false;
+    });
+});
+
 var canvas = document.getElementById('matrix');
 var ctx = canvas.getContext('2d');
 var fontSize = 18;
@@ -66,10 +73,3 @@ function draw() {
 
 initCanvas();
 setInterval(draw, 45);
-
-$(() => {
-     $(".link").click(() => {
-         window.location=$(this).find("a").attr("href");
-         return false;
-    });
-});

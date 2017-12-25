@@ -1,0 +1,57 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  overflow: hidden;
+}
+a {
+  text-decoration:none;
+  border-bottom:3px green dashed;
+}
+h1 {
+  color: #19FF19;
+}
+.link {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-title {
+  border: 1px solid #19FF19;
+  text-align: center;
+  color: #19FF19;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        border: 1px solid #19FF19;
+    }
+
+    to {
+        border: inherit;
+    }
+}
+/*Rotate the canvas area so that the letters appear mirrored*/
+#matrix {
+  /*
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  */
+  max-width: 100%;
+}
+#body {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
