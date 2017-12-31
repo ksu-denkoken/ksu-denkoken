@@ -35,6 +35,10 @@ img {
   width: 400px;
   heigth: auto;
 }
+hr {
+  border-top: 1px solid #BBB;
+  border-bottom: 1px solid #FFF;
+}
 figure > a{
   border-bottom: none;
 }
@@ -167,6 +171,20 @@ footer {
 }
 .page-top-button:active{
   background-color: #C0C0C0;
+}
+
+.frame {
+  border: 1px solid #FFF056;
+  margin-bottom: 1rem;
+  padding: 8px;
+}
+
+.Q{
+  color: #C93A40;
+}
+
+.A{
+  color: #0074BF;
 }
 
 @media (min-width: 750px) {
